@@ -6,13 +6,13 @@ import './App.css'
 // import Hero from './Hero.jsx';
 // import Feature from './Feature.jsx';
 // import Footer from  './Footer.jsx';
-import  Recipes from './api-call.jsx';
-
+// import  Recipes from './api-call.jsx';
+import TodoList  from './Todolist'
 function App() {
 
   return (
     <>  
-      <Recipes/>
+     <TodoList/>
     </>
   )
 }

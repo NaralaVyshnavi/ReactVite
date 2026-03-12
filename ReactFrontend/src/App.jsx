@@ -1,16 +1,18 @@
-import { useState } from 'react'
+import { useState,useContext } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import  Recipes from './api-call.jsx';
-import UseRef  from './useRef.jsx';
-
+import A from './A'
+import MyContext  from './MyContext'
 function App() {
-
-  return (
-    <>  
-      <UseRef/>
-    </>
+  const [count,setCount]=useState(0)
+;  return ( 
+      <MyContext.Provider value={[count,setCount]}>
+        <h1>Count:{count}</h1>
+        <button onClick={()=>setCount(count+1)}>+</button>
+        < A/>
+      </MyContext.Provider>
+  
   )
 }
 

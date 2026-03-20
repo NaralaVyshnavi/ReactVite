@@ -2,18 +2,19 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-// import Header from './Header.jsx';
-// import Hero from './Hero.jsx';
-// import Feature from './Feature.jsx';
-// import Footer from  './Footer.jsx';
-// import  Recipes from './api-call.jsx';
-import TodoList  from './Todolist'
-function App() {
+import Counter from './features/counter/Counter'
+import Todolist from './features/todolist/Todolist'
+import LikeDislike from './features/likeDislike/LikeDislike'
 
+function App() {
+ 
   return (
-    <>  
-     <TodoList/>
-    </>
+    <div className='myBox'> 
+    <Counter></Counter>
+    <Todolist></Todolist>
+    <LikeDislike></LikeDislike>
+    </div>
+ 
   )
 }
 

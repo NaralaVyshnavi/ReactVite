@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Counter from "./Counter.jsx";
 import Todolist from "./Todolist.jsx";
 
-import Recipes from "./api-call.jsx";
+import Recipes from "./api-call.jsx"
 import RecipeDetails from "./RecipeDetails.jsx";
 import Users from "./Users.jsx";
 import UserDetails from "./UserDetails.jsx";
@@ -25,21 +25,13 @@ const router = createBrowserRouter([
         element: <Todolist></Todolist>,
       },
       {
-        path: "/products",
-        element: <Products></Products>,
-      },
-      {
-        path: "/productDetails/:id",
-        element: <ProductDetails></ProductDetails>,
-      },
-      {
         path: "/users",
         element: <Users></Users>,
       },
-      {
-        path: "/userDetails",
-        element: <UserDetails></UserDetails>,
-      },
+     {
+        path:"/userDetails",
+        element:<UserDetails/>
+     },
       {
         path: "/recipes",
         element: <Recipes></Recipes>,

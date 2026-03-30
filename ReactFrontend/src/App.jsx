@@ -1,8 +1,8 @@
 
 import { Provider } from "react-redux";
-import Counter from "./Counter";
-import Todolist from "./Todolist";
-import Products from "./products";
+
+
+import { Link ,Outlet} from "react-router-dom";
 
 function App() {
   return (
@@ -11,9 +11,18 @@ function App() {
       <h1 className="bg-dark text-info">
         Welcome to Enterprise Level ReactJS Application Development
       </h1>
-        <Counter/>
-       <Todolist></Todolist>
-       <Products></Products>
+        <Link to="/counter">Counter</Link>
+        <br />
+        <Link to='/todolist'>Todolist</Link>
+        <br />
+        <Link to='/products'>Products</Link>
+        <br />
+        <Link to='/todos'>Todos</Link>
+        <br />
+        <Link to='/studentsForm'>Form</Link>
+        <div>
+          <Outlet></Outlet>
+        </div>
     </div>
   );
 }

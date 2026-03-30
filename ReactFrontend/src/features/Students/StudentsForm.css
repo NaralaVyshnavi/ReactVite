@@ -1,0 +1,60 @@
+/* Container */
+.myBox {
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Form Heading */
+.myForm h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Labels */
+.myForm label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Inputs */
+.myForm input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.myForm input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+/* Button */
+.myForm button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myForm button:hover {
+  background-color: #0056b3;
+}

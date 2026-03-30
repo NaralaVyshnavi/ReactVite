@@ -4,6 +4,7 @@ import todolistReducer from '../features/TodoList/todolistSlice'
 import { productsApi } from '../services/productsAPI'
 import { setupListeners } from '@reduxjs/toolkit/query'
 import { todosApi } from '../services/todosAPI'
+import { studentsApi } from '../services/studentsAPI'
 
 
 export const store=configureStore({
@@ -11,10 +12,11 @@ export const store=configureStore({
                 counterReducer,
                 todolistReducer,
                 [productsApi.reducerPath]:productsApi.reducer,
-                [todosApi.reducerPath]:todosApi.reducer
+                [todosApi.reducerPath]:todosApi.reducer,
+                [studentsApi.reducerPath]:studentsApi.reducer
         },
         middleware:(getDefaultMiddleware)=>{
-                return getDefaultMiddleware().concat(productsApi.middleware,todosApi.middleware)
+                return getDefaultMiddleware().concat(productsApi.middleware,todosApi.middleware,studentsApi.middleware)
         }
 })
 export default store

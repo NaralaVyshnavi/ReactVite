@@ -1,16 +1,1 @@
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.myBox{
-    border: 1px solid;
-    margin: 1em;
-    padding: 1em;
 
-
-}
-.myProducts{
-    display: flex;
-}

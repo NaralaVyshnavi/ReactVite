@@ -3,23 +3,13 @@ import { Provider } from "react-redux";
 
 
 import { Link ,Outlet} from "react-router-dom";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
  
     <div className="mybox">
-      <h1 className="bg-dark text-info">
-        Welcome to Enterprise Level ReactJS Application Development
-      </h1>
-        <Link to="/counter">Counter</Link>
-        <br />
-        <Link to='/todolist'>Todolist</Link>
-        <br />
-        <Link to='/products'>Products</Link>
-        <br />
-        <Link to='/todos'>Todos</Link>
-        <br />
-        <Link to='/studentsForm'>Form</Link>
+      <Navbar></Navbar>
         <div>
           <Outlet></Outlet>
         </div>

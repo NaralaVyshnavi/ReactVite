@@ -11,6 +11,8 @@ import Products from "./features/products/products.jsx";
 import Todos from './features/Todos/Todos.jsx'
 import ProductDetails from "./features/products/productDetails.jsx";
 import StudentsForm from "./features/Students/StudentsForm.jsx";
+import Login from "./Components/Login.jsx";
+import Signup from "./Components/Signup.jsx";
 
 
 const router=createBrowserRouter([
@@ -19,30 +21,12 @@ const router=createBrowserRouter([
     element:<App></App>,
     children:[
       {
-        path:'/counter',
-        element:<Counter></Counter>
+        path:'/login',
+        element:<Login></Login>
       },
       {
-        path:'/todos',
-        element:<Todos></Todos>
-      },
-      {
-        path:'/todolist',
-        element:<Todolist></Todolist>
-      },
-      {
-        path:'/studentsForm',
-        element:<StudentsForm></StudentsForm>
-      },
-      {
-        path:'/products',
-        element:<Products></Products>,
-        children:[
-          {
-            path:'productDetails/:id',
-            element:<ProductDetails></ProductDetails>
-          }
-        ]
+        path:'/signup',
+        element:<Signup></Signup>
       }
     ]
   }
@@ -50,7 +34,6 @@ const router=createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
-    <h1>Hello World</h1>
     <RouterProvider router={router}></RouterProvider>
   </Provider>
 );

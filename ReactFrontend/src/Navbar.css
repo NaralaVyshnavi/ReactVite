@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #0f172a; /* dark navy */
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Logo section */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .logo i {
+    font-size: 28px;
+    color: #38bdf8; /* light blue */
+}
+
+.navbar h1 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Menu */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+/* Buttons */
+.btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #38bdf8;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0ea5e9;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.btn-secondary:hover {
+    background-color: #38bdf8;
+    color: white;
+}
